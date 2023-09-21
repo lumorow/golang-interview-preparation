@@ -7,13 +7,13 @@ The page will be gradually supplemented and edited.
 ![gopher_russian](img/prew_gophers.png)
 
 ## Topics:
-- [Basic knowledge of the language](https://github.com/lumorow/golang-interview-preparation/Basic): let's talk about data types and working with them.
-- [Design Patterns](https://github.com/lumorow/golang-interview-preparation/Patterns): design patterns and how they are implemented in golang.
-- [Introduction to Object-oriented Programming in Go (OOP GO)](https://github.com/lumorow/golang-interview-preparation/OOP): how object-oriented programming is and implemented in golang.
-- [Multithreading](https://github.com/lumorow/golang-interview-preparation/Multithreading): how do threads work in golang.
-- [Networking](https://github.com/lumorow/golang-interview-preparation/Networking): basic knowledge of networking.
-- [Practical features of the language](https://github.com/lumorow/golang-interview-preparation/Practical): interesting points in golang that you need to understand.
-- [Golang under the hood](https://github.com/lumorow/golang-interview-preparation/UnderHood): what happens while our program is running.
+- [Basic knowledge of the language](https://github.com/lumorow/golang-interview-preparation/tree/main/Basic): let's talk about data types and working with them.
+- [Design Patterns](https://github.com/lumorow/golang-interview-preparation/tree/main/Patterns): design patterns and how they are implemented in golang.
+- [Introduction to Object-oriented Programming in Go (OOP GO)](https://github.com/lumorow/golang-interview-preparation/tree/main/OOP): how object-oriented programming is and implemented in golang.
+- [Multithreading](https://github.com/lumorow/golang-interview-preparation/tree/main/Multithreading): how do threads work in golang.
+- [Networking](https://github.com/lumorow/golang-interview-preparation/tree/main/Networking): basic knowledge of networking.
+- [Practical features of the language](https://github.com/lumorow/golang-interview-preparation/tree/main/Practical): interesting points in golang that you need to understand.
+- [Golang under the hood](https://github.com/lumorow/golang-interview-preparation/tree/main/UnderHood): what happens while our program is running.
 
 ## Your first program:
 How to Write Go Code https://go.dev/doc/code#Workspaces

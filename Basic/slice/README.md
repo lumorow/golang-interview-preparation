@@ -1,4 +1,5 @@
 ## Silace in Go
+***
 Slices are a structure that we will talk about next.
 ### Declaration
 ***
@@ -112,6 +113,23 @@ const threshold = 256
         newcap += (newcap + 3*threshold) / 4
 	}
 ```
+
+## Removing an element from a slice
+***
+To remove the `i` element from a slice, you need to select the elements before and after it,
+and then combine the two new slices into one.
+```golang
+slice = append(slice[:i], slice[i+1:]...)
+```
+
 ## Resources
 ***
 - [Go Slices: usage and internals](https://go.dev/blog/slices-intro)
+- [Arrays and Slices in Go](https://www.digitalocean.com/community/tutorials/understanding-arrays-and-slices-in-go)
+- [GoLang Slice в деталях, простым языком (Николай Тузов — Golang)](https://www.youtube.com/watch?v=10LW7NROfOQ&ab_channel=%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%D0%A2%D1%83%D0%B7%D0%BE%D0%B2%E2%80%94Golang)
+
+## README.md
+***
+
+- eng [English](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/slice/README.md)
+- ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/slice/README.ru.md)

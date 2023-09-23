@@ -1,4 +1,5 @@
 ## String in GO
+***
 `Strings` in `Go` are encoded in `UTF-8`, one of several standard Unicode encoding characters.
 `UTF-8` is an efficient variable-length encoding. A single code can use 8, 16, or 32 bits of memory.
 ### Declaring Go string queries
@@ -49,3 +50,9 @@ func concat2builder(x, y string) string {
   return builder.String()
 }
 ```
+
+## README.md
+***
+
+- eng [English](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/string/README.md)
+- ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/string/README.ru.md)

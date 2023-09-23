@@ -1,4 +1,5 @@
 # Golang interview preparation
+***
 This page is dedicated to strengthening and possibly
 introducing new knowledge for you in the golang programming language.
 This covers both theoretical and practical parts.  

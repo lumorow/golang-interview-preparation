@@ -1,4 +1,5 @@
 ## Строки в GO
+***
 `Строки` в Go закодированы в `UTF-8`, одном из нескольких стандартных символов кодирования юникод.
 `UTF-8` является эффективным кодированием переменной длины. Один код может использовать память объемом 8, 16 или 32 бита.
 ### Объявление строк в GO
@@ -48,3 +49,9 @@ func concat2builder(x, y string) string {
   return builder.String()
 }
 ```
+
+## README.md
+***
+
+- eng [English](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/string/README.md)
+- ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/string/README.ru.md)

@@ -1,4 +1,5 @@
 ## Срезы в Go
+***
 Срезы это структура, о которой мы поговорим далее.
 ### Обявление
 ***
@@ -112,6 +113,23 @@ const threshold = 256
         newcap += (newcap + 3*threshold) / 4
 	}
 ```
+
+## Удаление элемента из среза
+***
+Чтобы удалить `i-ый` элемент из среза, нужно выделить элементы до него и после него,  
+а потом объединить два новых среза в один.
+```golang
+slice = append(slice[:i], slice[i+1:]...)
+```
+
 ## Дополнительный материал
 ***
 - [Go Slices: usage and internals](https://go.dev/blog/slices-intro)
+- [Массивы и срезы в Go](https://www.digitalocean.com/community/tutorials/understanding-arrays-and-slices-in-go-ru)
+- [GoLang Slice в деталях, простым языком (Николай Тузов — Golang)](https://www.youtube.com/watch?v=10LW7NROfOQ&ab_channel=%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%D0%A2%D1%83%D0%B7%D0%BE%D0%B2%E2%80%94Golang)
+
+## README.md
+***
+
+- eng [English](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/slice/README.md)
+- ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/slice/README.ru.md)

@@ -1,5 +1,11 @@
 ## Map in GO
 ***
+<h1 align="center"><img class="goldT" src="../../img/map.svg" width="400" height="250"></h1>
+
+***
+
+***
+
 A hash table is a data structure that allows you to store key-value pairs, and typically has the following functions:
 
 - Mapping: map(key) → value

@@ -1,5 +1,9 @@
 ## String in GO
 ***
+<h1 align="center"><img class="goldT" src="../../img/strings.png"></h1>
+
+***
+
 `Strings` in `Go` are encoded in `UTF-8`, one of several standard Unicode encoding characters.
 `UTF-8` is an efficient variable-length encoding. A single code can use 8, 16, or 32 bits of memory.
 ### Declaring Go string queries

@@ -4,8 +4,6 @@
 
 ***
 
-***
-
 A hash table is a data structure that allows you to store key-value pairs, and typically has the following functions:
 
 - Mapping: map(key) → value

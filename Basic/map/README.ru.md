@@ -1,8 +1,6 @@
 ## Карты в GO
-***
-<h1 align="center"><img class="goldT" src="../../img/map.svg" width="400" height="250"></h1>
 
-***
+<h1 align="center"><img class="goldT" src="../../img/map.svg" width="400" height="250"></h1>
 
 Хэш таблица - это структура данных, которая позволяет хранить пары ключ-значение, и, как правило, обладающая функциями:
 

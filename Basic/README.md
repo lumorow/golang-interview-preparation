@@ -7,8 +7,7 @@ Let's look at the main data types in golang and their features
 - [Slice](https://github.com/lumorow/golang-interview-preparation/tree/main/Basic/slice)
 - [Interface](https://github.com/lumorow/golang-interview-preparation/tree/main/Basic/interface)
 
-***
-***
+
 ***
 
 ## Основные знания по языку

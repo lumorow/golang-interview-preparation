@@ -1,11 +1,11 @@
 # Golang interview preparation
-***
+
 This page is dedicated to strengthening and possibly
 introducing new knowledge for you in the golang programming language.
 This covers both theoretical and practical parts.  
 The page will be gradually supplemented and edited.
 
-![pre_gophers](img/pre_gophers.png)
+<h1 align="center"><img class="goldT" src="img/pre_gophers.png" ></h1>
 
 ## Topics
 ***
@@ -36,7 +36,9 @@ How to Write Go Code https://go.dev/doc/code#Workspaces
 - [Антон Сергеев, «Go под капотом»](https://www.youtube.com/watch?v=rloqQY9CT8I&t=7s)
 - [Как устроен garbage collector в Go 1.9 - Андрей Дроздов, Avito](https://www.youtube.com/watch?v=CX4GSErFenI)
 - Книга: Цукалос Михалис Golang для профи: работа с сетью, многопоточность, структуры данных и машинное обучение с Go
-
+- Книга: Мэтью Титмус: Облачный GO
+- Книга: Juan M. Tirado: Build Systems With Go: Everything a Gopher must know
+- 
 #### ENG:
 - [All Design Patterns in Go (Golang)](https://golangbyexample.com/all-design-patterns-golang/)
 - [Questions on Golang Basics](https://www.educative.io/blog/50-golang-interview-questions)

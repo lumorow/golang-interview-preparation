@@ -1,9 +1,7 @@
 ## Slice in Go
-***
+
 Slices are a structure that we will talk about next.
 <h1 align="center"><img class="goldT" src="../../img/gophslice.svg" width="400" height="250"></h1>
-
-***
 
 ### Declaration
 ***

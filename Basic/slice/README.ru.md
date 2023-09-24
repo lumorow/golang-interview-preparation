@@ -1,9 +1,7 @@
 ## Срезы в Go
-***
+
 Срезы это структура, о которой мы поговорим далее.
 <h1 align="center"><img class="goldT" src="../../img/gophslice.svg" width="400" height="250"></h1>
-
-***
 
 ### Обявление
 ***

@@ -147,7 +147,7 @@ type hmap struct {
     nevacuate  uintptr        // progress counter for evacuation (buckets less than this have been evacuated)
 }
 ```
-![hmap](../../img/hmap.png)
+![hmap](../../../img/hmap.png)
 
 На картинке схематичное изображение структуры в памяти — есть хэдер hmap, указатель на который и есть map в Go
 (именно он создается при объявлении с помощью var, но не инициализируется, из-за чего падает программа при попытке

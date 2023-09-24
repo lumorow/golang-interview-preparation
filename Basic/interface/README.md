@@ -64,5 +64,5 @@ pointer to an object, then interface will no longer be `nil`, since one of the f
 ***
 
 - eng [English](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/interface/README.md)
-- ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/interface/README.ru.md)
+- ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/interface/readme/README.ru.md)
 

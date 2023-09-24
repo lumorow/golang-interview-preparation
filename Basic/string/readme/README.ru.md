@@ -1,6 +1,6 @@
 ## Строки в GO
 
-<h1 align="center"><img class="goldT" src="../../img/strings.png"></h1>
+<h1 align="center"><img class="goldT" src="../../../img/strings.png"></h1>
 
 
 `Строки` в Go закодированы в `UTF-8`, одном из нескольких стандартных символов кодирования юникод.
@@ -57,4 +57,4 @@ func concat2builder(x, y string) string {
 ***
 
 - eng [English](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/string/README.md)
-- ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/string/README.ru.md)
+- ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/string/readme/README.ru.md)

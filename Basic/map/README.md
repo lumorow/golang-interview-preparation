@@ -183,4 +183,4 @@ use new data.
 ***
 
 - eng [English](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/map/README.md)
-- ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/map/README.ru.md)
+- ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/map/readme/README.ru.md)

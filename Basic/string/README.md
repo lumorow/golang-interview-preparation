@@ -57,4 +57,4 @@ func concat2builder(x, y string) string {
 ***
 
 - eng [English](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/string/README.md)
-- ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/string/README.ru.md)
+- ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/string/readme/README.ru.md)

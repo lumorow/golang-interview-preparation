@@ -1,6 +1,6 @@
 ## Интерфейсы в GO
 
-<h1 align="center"><img class="goldT" src="../../img/golang-any-interface-fs8.webp" ></h1>
+<h1 align="center"><img class="goldT" src="../../../img/golang-any-interface-fs8.webp" ></h1>
 
 Интерфейс в языке `Go` является следующей структурой:
 ```golang

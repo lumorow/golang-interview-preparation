@@ -1,6 +1,6 @@
 ## Карты в GO
 
-<h1 align="center"><img class="goldT" src="../../img/map.svg" width="400" height="250"></h1>
+<h1 align="center"><img class="goldT" src="../../../img/map.svg" width="400" height="250"></h1>
 
 Хэш таблица - это структура данных, которая позволяет хранить пары ключ-значение, и, как правило, обладающая функциями:
 
@@ -180,4 +180,4 @@ type hmap struct {
 ***
 
 - eng [English](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/map/README.md)
-- ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/map/README.ru.md)
+- ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/map/readme/README.ru.md)

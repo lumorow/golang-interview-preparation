@@ -37,12 +37,12 @@ How to Write Go Code https://go.dev/doc/code#Workspaces
 - [Как устроен garbage collector в Go 1.9 - Андрей Дроздов, Avito](https://www.youtube.com/watch?v=CX4GSErFenI)
 - Книга: Цукалос Михалис Golang для профи: работа с сетью, многопоточность, структуры данных и машинное обучение с Go
 - Книга: Мэтью Титмус: Облачный GO
-- Книга: Juan M. Tirado: Build Systems With Go: Everything a Gopher must know
-- 
+
 #### ENG:
 - [All Design Patterns in Go (Golang)](https://golangbyexample.com/all-design-patterns-golang/)
 - [Questions on Golang Basics](https://www.educative.io/blog/50-golang-interview-questions)
 - [50 Top Golang Interview Questions and Answers for 2023](https://hackr.io/blog/golang-interview-questions-and-answers)
+- Book: Juan M. Tirado: Build Systems With Go: Everything a Gopher must know
 
 ## README.md
 ***

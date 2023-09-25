@@ -12,3 +12,9 @@ Go has a number of built-in data types and also allows you to define your own ty
 - [Map](https://github.com/lumorow/golang-interview-preparation/tree/main/Basic/map)
 - [Slice](https://github.com/lumorow/golang-interview-preparation/tree/main/Basic/slice)
 - [Interface](https://github.com/lumorow/golang-interview-preparation/tree/main/Basic/interface)
+
+## README.md
+***
+
+- eng [English](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/README.md)
+- ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/readme/README.ru.md)

@@ -9,7 +9,7 @@ A hash table is a data structure that allows you to store key-value pairs, and t
 - Removal: delete(map, key)
 - Search: lookup(key) → value
 
-### Объявление
+### Declaring
 ***
 ```golang
 m := make(map[key_type]value_type)

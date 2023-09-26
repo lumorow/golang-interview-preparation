@@ -83,13 +83,13 @@
 Не стоит применять шаблоны там, где можно без них обойтись, просто ради «красоты». Если же использовать их в местах,
 где они действительно нужны – они станут хорошей помощью в работе программиста.
 
-### Дополнительный материал
+## Дополнительный материал
+***
 - [Go Design patterns (Introduction)](https://medium.com/@mr_apr/go-design-patterns-introduction-9c5e57a3cb13)
 - [Паттерны проектирования с примерами на Golang](https://github.com/AlexanderGrom/go-patterns)
 - [Golang | Паттерны проектирования - Агентство цифровых технологий](https://www.youtube.com/playlist?list=PLxj7Nz8YYkVW5KHnsb9qWUDP2eD1TXl1N)
 
 ## README.md
 ***
-
 - eng [English](https://github.com/lumorow/golang-interview-preparation/blob/main/Patterns/README.md)
 - ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Patterns/readme/README.ru.md)

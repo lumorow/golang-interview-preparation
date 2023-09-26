@@ -142,7 +142,10 @@ default:
 - Context
 - Chan
 
-### Дополнительный материал
+## Важно знать
+<h1 align="center"><img class="goldT" src="../../img/rwchan.jpeg"></h1>
+
+## Дополнительный материал
 - [Изучаем многопоточное программирование в Go по картинкам](https://habr.com/ru/articles/412715/)
 - [Конкурентность в Go: пять примеров (МТС)](https://habr.com/ru/companies/ru_mts/articles/680324/)
 - [Go: как изменяется размер стека горутины?](https://habr.com/ru/companies/otus/articles/586108/)

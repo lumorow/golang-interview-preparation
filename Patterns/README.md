@@ -1,6 +1,6 @@
 # Design Patterns
 
-<h1 align="center"><img class="goldT" src="../../img/patterns.webp" ></h1>
+<h1 align="center"><img class="goldT" src="../img/patterns.webp" ></h1>
 
 You can go straight to the explanation and implementation of patterns:
 [Design patterns with examples in Golang](https://github.com/AlexanderGrom/go-patterns)
@@ -32,6 +32,7 @@ They describe how simple classes and objects are “assembled” into more compl
 “Bridge” is the principle of dividing an entity into abstraction and implementation, so that the theoretical structure and the concrete object can change independently;
 “Facade” is a method for reducing external calls to a single object;
 “Proxy” is a pattern similar to “Facade”, but with a special proxy object that controls access to the main one.
+
 These are just some examples. There are many more real patterns.
 
 ## Behavioral.
@@ -85,13 +86,13 @@ The presence of shortcomings does not make the idea of patterns bad. It's just a
 You should not use templates where you can do without them, just for the sake of “beauty”. If you use them in places
 where they are really needed - they will become good
 
-### Resources
+## Resources
+***
 - [Go Design patterns (Introduction)](https://medium.com/@mr_apr/go-design-patterns-introduction-9c5e57a3cb13)
 - [Паттерны проектирования с примерами на Golang](https://github.com/AlexanderGrom/go-patterns)
 - [Golang | Паттерны проектирования - Агентство цифровых технологий](https://www.youtube.com/playlist?list=PLxj7Nz8YYkVW5KHnsb9qWUDP2eD1TXl1N)
 
 ## README.md
 ***
-
 - eng [English](https://github.com/lumorow/golang-interview-preparation/blob/main/Patterns/README.md)
 - ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Patterns/readme/README.ru.md)

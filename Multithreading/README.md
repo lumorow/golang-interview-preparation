@@ -145,6 +145,9 @@ You can synchronize channels in the following ways (examples can be found in [mt
 - Context
 - Chan
 
+## It is important to know
+<h1 align="center"><img class="goldT" src="../img/rwchan.jpeg"></h1>
+
 ## Resources
 - [Изучаем многопоточное программирование в Go по картинкам](https://habr.com/ru/articles/412715/)
 - [Конкурентность в Go: пять примеров (МТС)](https://habr.com/ru/companies/ru_mts/articles/680324/)

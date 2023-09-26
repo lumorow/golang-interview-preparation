@@ -21,7 +21,8 @@ _StackMin = 2048
 ## Каналы
 ***
 
-Каналы служат для общения-передачи данных через горутины и их синхронизации. Канал может быть и читающим, и отправляющим.
+Каналы служат для общения-передачи данных через горутины и их синхронизации.
+Канал может быть и читающим, и отправляющим.
 ```golang
 ch := make(chan type)
 ch <- "hello" // Записать в канал
@@ -135,6 +136,11 @@ default:
 ```
 
 ## Синхронизация
+***
+Синхронизировать каналы можно следующими способами (примеры можно найти в [mthreading.go](https://github.com/lumorow/golang-interview-preparation/blob/main/Multithreading/mthreading.go))
+- WaitGroup
+- Context
+- Chan
 
 ### Дополнительный материал
 - [Изучаем многопоточное программирование в Go по картинкам](https://habr.com/ru/articles/412715/)
@@ -142,7 +148,7 @@ default:
 - [Go: как изменяется размер стека горутины?](https://habr.com/ru/companies/otus/articles/586108/)
 - [Go Channels Internals](https://habr.com/ru/companies/oleg-bunin/articles/522742/)
 - [Как на самом деле устроены каналы в Golang? | Golang channels internals (Николай Тузов — Golang)](https://www.youtube.com/watch?v=ZTJcaP4G4JM&ab_channel=%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%D0%A2%D1%83%D0%B7%D0%BE%D0%B2%E2%80%94Golang)
-
+- [Разбираемся с пакетом Context в Golang](https://habr.com/ru/companies/nixys/articles/461723/)
 ## README.md
 ***
 

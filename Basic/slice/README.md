@@ -132,6 +132,5 @@ slice = append(slice[:i], slice[i+1:]...)
 
 ## README.md
 ***
-
 - eng [English](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/slice/README.md)
 - ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Basic/slice/readme/README.ru.md)

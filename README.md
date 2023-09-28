@@ -10,13 +10,15 @@ The page will be gradually supplemented and edited.
 ## Topics
 
 - [Basic knowledge of the language](https://github.com/lumorow/golang-interview-preparation/tree/main/Basic): let's talk about data types and working with them.
-- [Design Patterns](https://github.com/lumorow/golang-interview-preparation/tree/main/Patterns): design patterns and how they are implemented in golang.
-- [Introduction to Object-oriented Programming in Go (OOP GO)](https://github.com/lumorow/golang-interview-preparation/tree/main/OOP): how object-oriented programming is and implemented in golang.
-- [Multithreading](https://github.com/lumorow/golang-interview-preparation/tree/main/Multithreading): how do threads work in golang.
-- [Networking](https://github.com/lumorow/golang-interview-preparation/tree/main/Networking): basic knowledge of networking.
-- [Features of the language with examples](https://github.com/lumorow/golang-interview-preparation/tree/main/Practical): interesting points in golang that you need to understand.
+- [Introduction to Object-Oriented Programming in Go (GO OOP)](https://github.com/lumorow/golang-interview-preparation/tree/main/OOP): How object oriented programming is implemented in golang.
+- [Multithreading](https://github.com/lumorow/golang-interview-preparation/tree/main/Multithreading): how threads work in golang.
+- [Design Patterns](https://github.com/lumorow/golang-interview-preparation/tree/main/Patterns): Design patterns and their implementation in golang.
+- [Network](https://github.com/lumorow/golang-interview-preparation/tree/main/Networking): basic knowledge of networks.
+- [Docker](https://github.com/lumorow/golang-interview-preparation/tree/main/Docker): highlights from docker.
+- [Kafka](https://github.com/lumorow/golang-interview-preparation/tree/main/Kafka): highlights with Kafka.
+- [PostgreSQL](https://github.com/lumorow/golang-interview-preparation/tree/main/PostgreSQL): highlights of PostgreSQL.
 - [Golang under the hood](https://github.com/lumorow/golang-interview-preparation/tree/main/UnderHood): what happens while our program is running.
-
+- [Language Features with Examples](https://github.com/lumorow/golang-interview-preparation/tree/main/Practical): Interesting points in golang that you need to understand.
 
 
 ## Your first program

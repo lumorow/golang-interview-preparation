@@ -1,4 +1,4 @@
-## Многопоточность в golang
+# Многопоточность в golang
 
 <h1 align="center"><img class="goldT" src="../../img/concurrencyGo.jpeg"></h1>
 
@@ -185,30 +185,30 @@ type value struct {
 ```
 > fatal error: all goroutines are asleep — deadlock!
 
-Debugging deadlocks, like other synchronization errors, is complicated by the fact that
-that for their occurrence, specific conditions for the simultaneous execution of several processes are required.
-If Process 1 had time to acquire resource B before Process 2, then the error would not have occurred.
+Отладка взаимных блокировок, как и других ошибок синхронизации, усложняется тем,
+что для их возникновения нужны специфические условия одновременного выполнения нескольких процессов.
+Если бы Процесс 1 успел захватить ресурс B до Процесса 2, то ошибка не произошла бы.
 
-## Race condition and Data Race
+## Race condition и Data Race
 
-Race condition and data race are two different multithreading problems that are often confused. Let's try to figure it out.
+Race condition и data race — две разные проблемы многопоточности, которые часто путают. Попробуем разобраться.
 
 ### Race condition
-Race condition is a flaw that occurs when the timing or order of events affects the correctness of the program.
+Race condition — это недостаток, возникающий, когда время или порядок событий влияют на правильность программы.
 
-Given that race condition is a semantic error, there is no general way that can distinguish the correct one
-and incorrect program behavior in the general case.
+Учитывая, что race condition семантическая ошибка, нет общего способа который может отличить правильное
+и неправильное поведение программы в общем случае.
 
 #### Data Race
-Data race is a condition when different threads access the same memory cell without any synchronization
-and at least one of the threads is writing.
+Data race это состояние когда разные потоки обращаются к одной ячейке памяти без какой-либо синхронизации
+и как минимум один из потоков осуществляет запись.
 
-Data Races have a precise definition that is not necessarily related to correctness, and are therefore discoverable.
-There are many types of data race detectors (static/dynamic detection,
-lock-based detection, antecedent-based detection, hybrid data race detection).
+У Data Race есть точное определение, которое не обязательно связано с корректностью, и поэтому их можно обнаружить.
+Существует множество разновидностей детекторов гонки данных (статическое/динамическое обнаружение, обнаружение
+на основе блокировок, обнаружение основанное на предшествующих событий, обнаружение гибридного data race).
 
-Go has a good [Data Race Detector](https://go.dev/doc/articles/race_detector) with which such
-errors can be detected.
+У Go есть хороший [Data Race Detector](https://go.dev/doc/articles/race_detector) с помощью которого такие ошибки
+можно обнаружить.
 
 ## Важно знать
 <h1 align="center"><img class="goldT" src="../../img/rwchan.jpeg"></h1>
@@ -221,6 +221,7 @@ errors can be detected.
 - [Как на самом деле устроены каналы в Golang? | Golang channels internals (Николай Тузов — Golang)](https://www.youtube.com/watch?v=ZTJcaP4G4JM&ab_channel=%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%D0%A2%D1%83%D0%B7%D0%BE%D0%B2%E2%80%94Golang)
 - [Разбираемся с пакетом Context в Golang](https://habr.com/ru/companies/nixys/articles/461723/)
 - [Race condition и Data Race](https://medium.com/german-gorelkin/race-8936927dba20)
+
 ## README.md
 ***
 

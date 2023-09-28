@@ -10,13 +10,15 @@
 ## Темы
 
 - [Основные знания по языку](https://github.com/lumorow/golang-interview-preparation/tree/main/Basic): поговорим о типах данных и работе с ними.
-- [Патерны проектирования](https://github.com/lumorow/golang-interview-preparation/tree/main/Patterns): шаблоны проектирования и их реализация в golang.
 - [Введение в объектно-ориентированное программирование на Go (ООП GO)](https://github.com/lumorow/golang-interview-preparation/tree/main/OOP): как объектно-ориентированное программирование реализовано в golang.
 - [Многопоточность](https://github.com/lumorow/golang-interview-preparation/tree/main/Multithreading): как работают потоки в golang.
+- [Патерны проектирования](https://github.com/lumorow/golang-interview-preparation/tree/main/Patterns): шаблоны проектирования и их реализация в golang.
 - [Сеть](https://github.com/lumorow/golang-interview-preparation/tree/main/Networking): базовые знания по сетям.
-- [Особенности языка на примерах](https://github.com/lumorow/golang-interview-preparation/tree/main/Practical): интересные моменты в golang, которые вам нужно понять.
+- [Docker](https://github.com/lumorow/golang-interview-preparation/tree/main/Docker): основные моменты по docker.
+- [Kafka](https://github.com/lumorow/golang-interview-preparation/tree/main/Kafka): основные моменты по Kafka.
+- [PostgreSQL](https://github.com/lumorow/golang-interview-preparation/tree/main/PostgreSQL): основные моменты по PostgreSQL.
 - [Голанг под капотом](https://github.com/lumorow/golang-interview-preparation/tree/main/UnderHood): что происходит во время работы нашей программы.
-
+- [Особенности языка на примерах](https://github.com/lumorow/golang-interview-preparation/tree/main/Practical): интересные моменты в golang, которые вам нужно понять.
 
 ## Твоя первая программа
 

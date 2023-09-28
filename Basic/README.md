@@ -1,4 +1,4 @@
-## Basic knowledge of the language
+# Basic knowledge of the language
 
 <h1 align="center"><img class="goldT" src="../img/basicgo.jpg" ></h1>
 

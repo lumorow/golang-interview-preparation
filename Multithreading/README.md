@@ -1,4 +1,4 @@
-## Multithreading golang
+# Multithreading golang
 
 <h1 align="center"><img class="goldT" src="../img/concurrencyGo.jpeg"></h1>
 
@@ -187,6 +187,31 @@ type value struct {
 }
 ```
 > fatal error: all goroutines are asleep — deadlock!
+
+Debugging deadlocks, like other synchronization errors, is complicated by the fact that
+for their occurrence, specific conditions for the simultaneous execution of several processes are required.
+If Process 1 had time to acquire resource B before Process 2, then the error would not have occurred.
+
+## Race condition and Data Race
+
+Race condition and data race are two different multithreading problems that are often confused. Let's try to figure it out.
+
+### Race condition
+Race condition is a flaw that occurs when the timing or order of events affects the correctness of the program.
+
+Given that race condition is a semantic error, there is no general way that can distinguish the correct one
+and incorrect program behavior in the general case.
+
+### Data Race
+Data race is a condition when different threads access the same memory cell without any synchronization
+and at least one of the threads is writing.
+
+Data Races have a precise definition that is not necessarily related to correctness, and are therefore discoverable.
+There are many types of data race detectors (static/dynamic detection,
+lock-based detection, antecedent-based detection, hybrid data race detection).
+
+Go has a good [Data Race Detector](https://go.dev/doc/articles/race_detector) with which such
+errors can be detected.
 
 ## It is important to know
 <h1 align="center"><img class="goldT" src="../img/rwchan.jpeg"></h1>

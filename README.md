@@ -8,7 +8,6 @@ The page will be gradually supplemented and edited.
 <h1 align="center"><img class="goldT" src="img/pre_gophers.png" ></h1>
 
 ## Topics
-***
 
 - [Basic knowledge of the language](https://github.com/lumorow/golang-interview-preparation/tree/main/Basic): let's talk about data types and working with them.
 - [Design Patterns](https://github.com/lumorow/golang-interview-preparation/tree/main/Patterns): design patterns and how they are implemented in golang.
@@ -21,12 +20,10 @@ The page will be gradually supplemented and edited.
 
 
 ## Your first program
-***
 
 How to Write Go Code https://go.dev/doc/code#Workspaces
 
 ## Helpful Learning Resources
-***
 
 #### RUS:
 - [Avito.code](https://www.youtube.com/playlist?list=PLknJ4Vr6efQFHIBKN_igl7Zl6nMbcjrsd)
@@ -43,9 +40,9 @@ How to Write Go Code https://go.dev/doc/code#Workspaces
 - [Questions on Golang Basics](https://www.educative.io/blog/50-golang-interview-questions)
 - [50 Top Golang Interview Questions and Answers for 2023](https://hackr.io/blog/golang-interview-questions-and-answers)
 - Book: Juan M. Tirado: Build Systems With Go: Everything a Gopher must know
+- Book: Teiva Harsanyi: 100 Go Mistakes and How to Avoid Them
 
 ## README.md
-***
 
 - eng [English](https://github.com/lumorow/golang-interview-preparation/blob/main/README.md)
 - ru [Русский](https://github.com/lumorow/golang-interview-preparation/tree/main/readme/README.ru.md)

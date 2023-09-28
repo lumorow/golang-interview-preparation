@@ -8,7 +8,6 @@
 <h1 align="center"><img class="goldT" src="../img/pre_gophers.png" ></h1>
 
 ## Темы
-***
 
 - [Основные знания по языку](https://github.com/lumorow/golang-interview-preparation/tree/main/Basic): поговорим о типах данных и работе с ними.
 - [Патерны проектирования](https://github.com/lumorow/golang-interview-preparation/tree/main/Patterns): шаблоны проектирования и их реализация в golang.
@@ -19,14 +18,11 @@
 - [Голанг под капотом](https://github.com/lumorow/golang-interview-preparation/tree/main/UnderHood): что происходит во время работы нашей программы.
 
 
-
 ## Твоя первая программа
-***
 
 Как написать код Go https://go.dev/doc/code#Workspaces
 
 ## Полезные учебные ресурсы
-***
 
 #### RUS:
 - [Avito.code](https://www.youtube.com/playlist?list=PLknJ4Vr6efQFHIBKN_igl7Zl6nMbcjrsd)
@@ -43,9 +39,9 @@
 - [All Design Patterns in Go (Golang)](https://golangbyexample.com/all-design-patterns-golang/)
 - [Questions on Golang Basics](https://www.educative.io/blog/50-golang-interview-questions)
 - [50 Top Golang Interview Questions and Answers for 2023](https://hackr.io/blog/golang-interview-questions-and-answers)
+- Book: Teiva Harsanyi: 100 Go Mistakes and How to Avoid Them
 
 ## README.md
-***
 
 - eng [English](https://github.com/lumorow/golang-interview-preparation/blob/main/README.md)
 - ru [Русский](https://github.com/lumorow/golang-interview-preparation/tree/main/readme/README.ru.md)

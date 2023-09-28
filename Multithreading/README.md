@@ -1,6 +1,6 @@
 ## Multithreading golang
 
-<h1 align="center"><img class="goldT" src="../../img/concurrencyGo.jpeg"></h1>
+<h1 align="center"><img class="goldT" src="../img/concurrencyGo.jpeg"></h1>
 
 Executing more than one task at the same time is known as multithreading. Go is rich in functionality
 for working with multithreading, in particular, tools such as goroutines and channels.
@@ -144,6 +144,49 @@ You can synchronize channels in the following ways (examples can be found in [mt
 - WaitGroup
 - Context
 - Chan
+
+## Deadlock
+
+> fatal error: all goroutines are asleep - deadlock!
+
+<h1 align="center"><img class="goldT" src="../img/deadlock.png"></h1>
+
+Deadlock is a mistake
+which occurs when processes have a cyclic dependence on a pair of synchronized objects.
+
+Deadlock is a program in which all parallel processes wait for each other.
+In this state, the program will never recover without outside intervention.
+
+### Example
+```golang
+func main() {
+    var wg sync.WaitGroup
+    printSum := func(v1, v2 *value) {
+    defer wg.Done()
+    
+          v1.mu.Lock() // Process 1 is blocking A; Process 2 is blocking B
+          defer v1.mu.Unlock()
+    
+          time.Sleep(2 * time.Second)
+    
+          v2.mu.Lock() // Process 1 is waiting for B; Process 2 is waiting for A
+          defer v2.mu.Unlock()
+    
+          fmt.Printf("sum=%v\n", v1.value+v2.value)
+    }
+    var a, b value
+    wg.Add(2)
+    go printSum(&a, &b) // Process 1
+    go printSum(&b, &a) // Process 2
+    wg.Wait()
+}
+
+type value struct {
+    mu    sync.Mutex
+    value int
+}
+```
+> fatal error: all goroutines are asleep — deadlock!
 
 ## It is important to know
 <h1 align="center"><img class="goldT" src="../img/rwchan.jpeg"></h1>

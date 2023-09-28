@@ -1,4 +1,4 @@
-# Базовые знания по сетям
+# Basic knowledge of networks
 
 ## TCP and UDP. In which case is UDP preferable?
 ***

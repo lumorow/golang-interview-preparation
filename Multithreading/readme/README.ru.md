@@ -142,6 +142,74 @@ default:
 - Context
 - Chan
 
+## Deadlock
+
+> fatal error: all goroutines are asleep - deadlock!
+
+<h1 align="center"><img class="goldT" src="../../img/deadlock.png"></h1>
+
+Deadlock или взаимная блокировка — это ошибка,
+которая происходит когда процессы имеют циклическую зависимость от пары синхронизированных объектов.
+
+Deadlock — это программа, в которой все параллельные процессы ожидают друг друга.
+В этом состоянии программа никогда не восстановится без вмешательства извне.
+
+### Пример
+```golang
+func main() {
+    var wg sync.WaitGroup
+    printSum := func(v1, v2 *value) {
+    defer wg.Done()
+    
+          v1.mu.Lock() // Процесс 1 блокирует А; Процесс 2 блокирует B
+          defer v1.mu.Unlock()
+    
+          time.Sleep(2 * time.Second)
+    
+          v2.mu.Lock() // Процесс 1 ожидает B; Процесс 2 ожидает А
+          defer v2.mu.Unlock()
+    
+          fmt.Printf("sum=%v\n", v1.value+v2.value)
+    }
+    var a, b value
+    wg.Add(2)
+    go printSum(&a, &b) // Процесс 1
+    go printSum(&b, &a) // Процесс 2
+    wg.Wait()
+}
+
+type value struct {
+    mu    sync.Mutex
+    value int
+}
+```
+> fatal error: all goroutines are asleep — deadlock!
+
+Debugging deadlocks, like other synchronization errors, is complicated by the fact that
+that for their occurrence, specific conditions for the simultaneous execution of several processes are required.
+If Process 1 had time to acquire resource B before Process 2, then the error would not have occurred.
+
+## Race condition and Data Race
+
+Race condition and data race are two different multithreading problems that are often confused. Let's try to figure it out.
+
+### Race condition
+Race condition is a flaw that occurs when the timing or order of events affects the correctness of the program.
+
+Given that race condition is a semantic error, there is no general way that can distinguish the correct one
+and incorrect program behavior in the general case.
+
+#### Data Race
+Data race is a condition when different threads access the same memory cell without any synchronization
+and at least one of the threads is writing.
+
+Data Races have a precise definition that is not necessarily related to correctness, and are therefore discoverable.
+There are many types of data race detectors (static/dynamic detection,
+lock-based detection, antecedent-based detection, hybrid data race detection).
+
+Go has a good [Data Race Detector](https://go.dev/doc/articles/race_detector) with which such
+errors can be detected.
+
 ## Важно знать
 <h1 align="center"><img class="goldT" src="../../img/rwchan.jpeg"></h1>
 
@@ -152,6 +220,7 @@ default:
 - [Go Channels Internals](https://habr.com/ru/companies/oleg-bunin/articles/522742/)
 - [Как на самом деле устроены каналы в Golang? | Golang channels internals (Николай Тузов — Golang)](https://www.youtube.com/watch?v=ZTJcaP4G4JM&ab_channel=%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%D0%A2%D1%83%D0%B7%D0%BE%D0%B2%E2%80%94Golang)
 - [Разбираемся с пакетом Context в Golang](https://habr.com/ru/companies/nixys/articles/461723/)
+- [Race condition и Data Race](https://medium.com/german-gorelkin/race-8936927dba20)
 ## README.md
 ***
 

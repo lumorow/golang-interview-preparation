@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+type Grower interface {
+	growUp()
+}
+
 type person struct {
 	age    int
 	height int
@@ -37,6 +41,13 @@ type workman struct {
 	placeOfWork string
 }
 
+type dog struct {
+}
+
+func (d *dog) growUp() {
+	fmt.Printf("Gav! Gav!") // just example
+}
+
 func NewWorkman(placeOfWork string, p *person) *workman {
 	return &workman{
 		placeOfWork: placeOfWork,
@@ -48,4 +59,10 @@ func main() {
 	p := NewPerson(30, 183, 76, "male", "Michael")
 	w := NewWorkman("Factory", p)
 	w.myNameIs()
+	d := &dog{}
+
+	growers := []Grower{p, d}
+	for _, gr := range growers {
+		gr.growUp() // polymorphism
+	}
 }

@@ -37,7 +37,7 @@ func (p *person) gainWeight() {
 }
 
 type workman struct {
-	person
+	person      // Inheritance (inlining)
 	placeOfWork string
 }
 

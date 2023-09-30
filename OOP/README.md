@@ -3,7 +3,7 @@
 <h1 align="center"><img class="goldT" src="../img/oopgo.jpeg" ></h1>
 
 ## Difference between new and make
-`make` allocates memory for reference data types ( slice , map , chan ) and also initializes
+`make` allocates memory for reference data types (`slice`, `map`, `chan`) and also initializes
 their underlying data structures.
 
 `new` returns only pointers to the initialized memory and sets it to zero for type `T`,
@@ -46,7 +46,7 @@ which can create this object for us according to the given instructions inside i
 
 Golang does not have inheritance, but uses `inlining`.
 The simplest use case for inheritance is that a child type must have access to the fields and methods of the parent type.
-This is done in Go through inlining. The base structure is embedded in the child structure, after which the base fields
+This is done in Go through `inlining`. The base structure is embedded in the child structure, after which the base fields
 and methods can be directly accessed by the child structure.
 
 More details:  

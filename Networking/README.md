@@ -1,5 +1,58 @@
 # Basic knowledge of networks
 
+## REST API
+
+REST API is a way for websites and web applications to interact with the server. It is also called RESTful "architectural style".
+
+<h1 align="center"><img class="goldT" src="../img/rest-api.png" ></h1>
+
+API (Application Programming Interface) is code that allows two applications to exchange
+data from the server.  
+
+REST (Representational State Transfer) is a way of creating APIs using the HTTP protocol.
+
+***
+### REST API Principles
+RESTful has 7 principles for coding interfaces.
+
+- Separation of the client from the server (`Client-Server`).
+  The client is the user interface of a site or application, for example, a video hosting search bar.
+  In a REST API, the request code stays on the client side and the data access code stays on the server side.
+  This simplifies the organization of the API and makes it easy to transfer the user interface to another platform
+  and makes it possible to better scale server data storage.
+
+- Lack of client state recording (`Stateless`). The server should not store state information
+  (operations performed) of the client. Each request from the client must contain only the information
+  which is needed to receive data from the server.
+
+- Cacheable. The request data must indicate whether the data should be cached
+  (save in a special buffer for frequent requests). If there is such an indication, the client will receive
+  the right to access this buffer if necessary.
+
+- `Uniform Interface`. All data must be requested through one URL
+  standard protocols such as HTTP. This simplifies the architecture of the site or application and makes
+  interaction with the server is clearer.
+
+- Multi-level system (`Layered System`). In RESTful, servers can be located at different levels,
+  Moreover, each server interacts only with the nearest levels and is not connected by requests with others.
+
+- Providing code upon request (`Code on Demand`). Servers can send code to the client
+  (for example, a script to start a video). This way, the overall code of an application or website becomes more complex only when necessary.
+
+- `Starting with the Null Style`. The client knows only one entry point to the server.
+  Further interaction opportunities are provided by the server.
+
+***
+### The REST API has 4 HTTP methods that are used to manipulate objects on servers:
+
+- GET (receiving information about data or a list of objects)
+- DELETE (deleting data)
+- POST (adding or replacing data)
+- PUT (regular data update)
+
+Such requests are also called `CRUD` identifiers: create (create), read (read), update (update) delete (delete).
+This is a standard set of actions for working with data.
+
 ## TCP and UDP. In which case is UDP preferable?
 ***
 `TCP` is a transport protocol for data transfer in `TCP/IP` networks, which preliminarily establishes a connection to the network.
@@ -77,7 +130,7 @@ OSI model - describes how network devices work. This is a data transfer process 
 The process of data transfer always involves the sending device, the receiving device, as well as the data itself,
 which must be sent and received. From the point of view of an ordinary user, the task is elementary - you need to take
 and send this data. Everything that happens when sending and receiving data is described in detail by the seven-layer OSI model.
-
+***
 ### L1, physical layer
 
 This layer works with cables, contacts in connectors, signal modulation, coding of ones and zeros and others
@@ -88,7 +141,7 @@ The most famous protocol at the physical layer is Ethernet. It describes how sig
 In addition, there is Bluetooth, Wi-Fi and an infrared port, which also contain instructions for transferring data.
 
 Physical layer devices - hubs and repeaters. They work with the physical signal “stupidly” and do not delve into its logic: they received the data and transmitted it further along the wire.
-
+***
 ### L2, data link layer
 
 Above the physical layer is the channel layer. Its task is to check the integrity of the received data and correct errors.
@@ -108,7 +161,7 @@ devices on the local network, consists of 48 or 64 bits and looks something like
 Another important fact about MAC addresses: when a laptop or smartphone is assembled at a factory, it is immediately assigned
 a specific MAC address, which then cannot be changed in any way. The MAC address of desktop PCs is hardwired into the network card,
 therefore, it can only be changed by replacing this very card.
-
+***
 ### L3, network layer
 
 This layer is responsible for routing data within the network between computers.
@@ -122,12 +175,12 @@ but use different recipient and sender addresses - IP addresses.
 
 To obtain the IP address of both devices (sender and recipient), there is a protocol
 ARP (address resolution protocol). It can convert MAC to IP address and vice versa.
-
+***
 ### L4, transport layer
 
 From the name it is clear that at this level data is transferred over the network. This is true.
 The two main protocols here are TCP and UDP. They are precisely responsible for how exactly the data will be transmitted.
-
+***
 ### L5, session layer
 
 From this level and higher, the data already has a normal form - for example, the JPEG or MP3 files we are familiar with.
@@ -141,7 +194,7 @@ through which audio and video are transmitted. If such a connection is interrupt
 At the session level, it is very important that the connection is established and maintained correctly.
 That is, protocol mechanisms must check that both interlocutors have the necessary codecs and
 there is a signal between the devices.
-
+***
 ### L6, presentation layer
 
 At this level, data formats are converted - their encoding and compression.
@@ -150,7 +203,7 @@ and in reverse order: when a user sends a file to another person, the data is fi
 into bits and compressed, and then transmitted to the transport layer.
 
 In addition to encoding and compression at the presentation level, data can be encrypted - if necessary, of course.
-
+***
 ### L7, application layer
 
 The last layer of the OSI model is the application layer. It contains network services,
@@ -161,9 +214,10 @@ with the help of the user interacts with other levels without even knowing it. T
 
 The most popular network interfaces are HTTP, HTTPS, FTP and SMTP.
 And the “devices” here are already programs: Zoom, Telegram, browsers.
-
-## Resources
 ***
+## Resources
+
+- [REST API](https://blog.skillfactory.ru/glossary/rest-api/)
 - [How the Web Works: A Primer for Newcomers to Web Development (or anyone, really)](https://www.freecodecamp.org/news/how-the-web-works-a-primer-for-newcomers-to-web-development-or-anyone-really-b4584e63585c#.7l3tokoh1)
 - [How the Web Works Part II: Client-Server Model & the Structure of a Web Application](https://medium.com/free-code-camp/how-the-web-works-part-ii-client-server-model-the-structure-of-a-web-application-735b4b6d76e3#.e6tmj8112)
 - [HTTP 1, 2 and 3 — easy](https://habr.com/ru/articles/739166/)
@@ -172,6 +226,6 @@ And the “devices” here are already programs: Zoom, Telegram, browsers.
 - [What is the OSI model and why is it needed: the dissecting layer cake of the Internet](https://skillbox.ru/media/code/chto-takoe-model-osi-i-zachem-ona-nuzhna-prepariruem-sloyenyy-pirog-interneta/)
 
 ## README.md
-***
+
 - eng [English](https://github.com/lumorow/golang-interview-preparation/blob/main/Networking/README.md)
 - ru [Русский](https://github.com/lumorow/golang-interview-preparation/blob/main/Networking/readme/README.ru.md)

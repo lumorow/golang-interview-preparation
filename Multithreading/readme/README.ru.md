@@ -98,24 +98,26 @@ go func() {
 Горутина прочитает из канала данные, если только они там есть, в противном случае выполняется блок `default`:
 
 ```golang
-myChan := make(chan string)
-
-go func(){
-    myChan <- “Message!”
-}()
-
-select {
-    case msg := <- myChan:
-        fmt.Println(msg)
-    default:
-        fmt.Println(“No Msg”)
-}
-<-time.After(time.Second * 1)
-select {
-    case msg := <- myChan:
-        fmt.Println(msg)
-    default:
-        fmt.Println(“No Msg”)
+func main() {
+    myChan := make(chan string)
+    
+    go func() {
+        myChan <- "Message!"
+    }()
+    
+    select {
+        case msg := <-myChan:
+            fmt.Println(msg)
+        default:
+            fmt.Println("No Msg")
+    }
+    <-time.After(time.Second * 1)
+    select {
+        case msg := <-myChan:
+            fmt.Println(msg)
+        default:
+            fmt.Println("No Msg")
+    }
 }
 ```
 После запуска этот код выведет следующее:
@@ -128,10 +130,10 @@ Message!
 
 ```golang
 select {
-case myChan <- “message”:
-    fmt.Println(“sent the message”)
+case myChan <- "message":
+    fmt.Println("sent the message")
 default:
-    fmt.Println(“no message sent”)
+    fmt.Println("no message sent")
 }
 ```
 

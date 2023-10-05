@@ -100,24 +100,26 @@ By using the `select-case` construct, blocking reading from the pipe can be avoi
 The goroutine will read data from the channel if it is there, otherwise the `default` block is executed:
 
 ```golang
-myChan := make(chan string)
-
-go func(){
-    myChan <- “Message!”
-}()
-
-select {
-    case msg := <- myChan:
-        fmt.Println(msg)
-    default:
-        fmt.Println(“No Msg”)
-}
-<-time.After(time.Second * 1)
-select {
-    case msg := <- myChan:
-        fmt.Println(msg)
-    default:
-        fmt.Println(“No Msg”)
+func main() {
+    myChan := make(chan string)
+    
+    go func() {
+        myChan <- "Message!"
+    }()
+    
+    select {
+        case msg := <-myChan:
+            fmt.Println(msg)
+        default:
+            fmt.Println("No Msg")
+    }
+    <-time.After(time.Second * 1)
+    select {
+        case msg := <-myChan:
+            fmt.Println(msg)
+        default:
+            fmt.Println("No Msg")
+    }
 }
 ```
 
@@ -131,10 +133,10 @@ Message!
 
 ```golang
 select {
-case myChan <- “message”:
-    fmt.Println(“sent the message”)
+case myChan <- "message":
+    fmt.Println("sent the message")
 default:
-    fmt.Println(“no message sent”)
+    fmt.Println("no message sent")
 }
 ```
 

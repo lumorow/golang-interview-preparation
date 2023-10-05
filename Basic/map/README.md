@@ -177,6 +177,7 @@ use new data.
 - [Go maps in action](https://go.dev/blog/maps)
 - [Знакомство с картами в Go](https://www.digitalocean.com/community/tutorials/understanding-maps-in-go-ru)
 - [Хэш таблицы в Go. Детали реализации](https://habr.com/ru/articles/457728/)
+- [Hashmap(map) по версии Golang вместе с реализацией на дженериках](https://habr.com/ru/articles/704796/)
 - [Как на самом деле устроен тип Map в Golang? (Николай Тузов — Golang)](https://www.youtube.com/watch?v=P_SXTUiA-9Y&ab_channel=%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%D0%A2%D1%83%D0%B7%D0%BE%D0%B2%E2%80%94Golang)
 
 ## README.md

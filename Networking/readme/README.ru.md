@@ -220,6 +220,8 @@ ARP (address resolution protocol). Он умеет конвертировать 
 - [HTTP/1.1 И HTTP/2](https://www.8host.com/blog/v-chem-raznica-mezhdu-http1-1-i-http2/#:~:text=%D0%92%20%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D0%B5%20%D0%BE%D1%82%20HTTP%2F1.1%2C%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9%20%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9,%D0%B2%20%D0%BF%D1%80%D0%B8%D0%B2%D1%8B%D1%87%D0%BD%D0%BE%D0%BC%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B5%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%2D%D0%BE%D1%82%D0%B2%D0%B5%D1%82.)
 - [Простое пособие по сетевой модели OSI для начинающих](https://selectel.ru/blog/osi-for-beginners/)
 - [Что такое модель OSI и зачем она нужна: препарируем слоёный пирог интернета](https://skillbox.ru/media/code/chto-takoe-model-osi-i-zachem-ona-nuzhna-prepariruem-sloyenyy-pirog-interneta/)
+- [Пакет context в Go: взгляд профессионала](https://habr.com/ru/companies/pt/articles/764850/)
+
 ## README.md
 
 - eng [English](https://github.com/lumorow/golang-interview-preparation/blob/main/Networking/README.md)
